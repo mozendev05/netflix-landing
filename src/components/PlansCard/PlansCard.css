@@ -1,0 +1,35 @@
+.Pc-container {
+    padding: 2.3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, hsl(334, 55%, 27%) 0%, hsl(357, 43%, 9%) 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+.Pc-title {
+    font-size: clamp(1.4rem, 1.1176rem + 0.4706vw, 1.5rem);
+    font-weight: 700;
+}
+
+.Pc-info {
+    font-size: clamp(1rem, 0.8306rem + 0.2824vw, 1.06rem);
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, 0.702);
+}
+
+.Pc-price {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    font-size: clamp(1rem, 0.7176rem + 0.4706vw, 1.1rem);
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+@media screen and (max-width: 960px) {
+    .Pc-container {
+        gap: .9rem;
+    }  
+}

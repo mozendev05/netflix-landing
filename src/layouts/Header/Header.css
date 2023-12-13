@@ -1,0 +1,38 @@
+.Hd-container {
+    width: 100%;
+    padding: 0 1.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Hd-img {
+    width: clamp(8rem, 5.0000rem + 8.0000vw, 11.5rem);
+    transform: translateX(-.75rem);
+}
+
+.Hd-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+
+.Hd-loginingBtn {
+    padding: .3rem 1.1rem;
+    font-size: .9rem;
+    font-weight: 700;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(357, 92%, 47%);
+}
+
+.Hd-loginingBtn:hover {
+    background-color: hsl(357, 84%, 41%);
+}

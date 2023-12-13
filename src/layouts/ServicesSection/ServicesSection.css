@@ -1,0 +1,37 @@
+.Ss-container {
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.Ss-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Ss-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .9rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .Ss-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .Ss-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .Ss-title {
+        font-size: 1.2rem;
+    }
+}

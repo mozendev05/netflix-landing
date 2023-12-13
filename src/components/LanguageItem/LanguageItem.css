@@ -1,0 +1,46 @@
+.Li-container {
+    width: max-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Li-select {
+    padding: .3rem 2.3rem;
+    font-weight: 500;
+    border: 1px solid hsl(0, 0%, 38%);
+    border-radius: .3rem;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.Li-option {
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+}
+
+.Li-iconRight,
+.Li-iconLeft {
+    position: absolute;
+    font-size: .95rem;
+    pointer-events: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.Li-iconRight {
+    right: 1rem;
+}
+
+.Li-iconLeft {
+    left: .8rem;
+}
+
+@media screen and (max-width: 600px) {
+    .Li-select {
+        width: 0;
+        padding: .3rem 1.9rem;
+    }
+}

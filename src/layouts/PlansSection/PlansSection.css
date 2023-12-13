@@ -1,0 +1,33 @@
+.Ps-container {
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Ps-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: hsl(0, 0%, 100%);
+}
+
+.Ps-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .9rem;
+}
+
+@media screen and (max-width: 960px) {
+    .Ps-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Ps-title {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,119 @@
+.Ri-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.Ri-text {
+    font-weight: 500;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.702);
+}
+
+.Ri-field {
+    display: flex;
+    gap: .5rem;
+}
+
+.Ri-inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.Ri-input {
+    width: 100%;
+    height: 100%;
+    padding: 1.6875rem 1rem .5rem;
+    border: 1px solid hsl(0, 0%, 45%);
+    border-radius: .3rem;
+    background-color: hsla(0, 2%, 12%, 0.541);
+    color: hsl(0, 0%, 100%);
+}
+
+.Ri-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    font-weight: 600;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: transform .2s ease-in-out;
+    color: #b0b0b0;
+}
+
+.Ri-input:focus ~ .Ri-label,
+.Ri-input:valid ~ .Ri-label {
+    transform: translate(-.26rem, -1.5rem) scale(.8);
+}
+
+.Ri-btn {
+    width: 16rem;
+    height: 3.6875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(357, 92%, 47%);
+}
+
+.Ri-btn:hover {
+    background-color: hsl(357, 84%, 41%);
+}
+
+.Ri-icon {
+    font-size: 2rem;
+    transform: translateY(.1rem);
+}
+
+@media screen and (max-width: 1300px) {
+    .Ri-input {
+        padding: 1.5rem 1rem 0.5rem;
+    }
+
+    .Ri-label {
+        font-size: .95rem;
+    }
+
+    .Ri-btn {
+        width: 14rem;
+        font-size: 1.1rem;
+    }
+
+    .Ri-icon {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .Ri-field {
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+    }
+
+    .Ri-btn {
+        width: 10rem;
+        height: 2.875rem;
+    }
+
+    .Ri-input {
+        padding: 1.25rem 1rem 0.25rem 1rem;
+        font-size: .95rem;
+    }
+
+    .Ri-label {
+        font-size: .9rem;
+    }
+
+    .Ri-input:focus ~ .Ri-label,
+    .Ri-input:valid ~ .Ri-label {
+        transform: translate(-.26rem, -1.27rem) scale(.8);
+    }
+
+}

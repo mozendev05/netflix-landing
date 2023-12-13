@@ -1,0 +1,95 @@
+.Hr-container {
+    width: 100%;
+    min-height:min(800px, 100dvh);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url(../../assets/images/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.Hr-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: hsla(0, 0%, 0%, 0.702);
+    background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.8) 0, hsla(0, 0%, 0%, 0) 60%, hsla(0, 0%, 0%, 0.8) 100%);
+}
+
+.Hr-content {
+    max-width: clamp(40rem, 17.5000rem + 40.0000vw, 50rem);
+    width: 100%;
+    height: 100%;
+    padding: 3rem 1.5rem 3rem 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    color: hsl(0, 0%, 100%)
+}
+
+.Hr-title {
+    font-size: 3.6rem;
+    font-weight: 1000;
+    line-height: 1.5;
+}
+
+.Hr-subtitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Hr-content {
+        padding-left: clamp(1.5rem, -4.9286rem + 17.1429vw, 9rem);
+        gap: 1.5rem;
+    }
+
+    .Hr-title {
+        font-size: 2.9rem;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .Hr-content {
+        gap: 1rem;
+    }
+
+    .Hr-title {
+        font-size: 2.7rem;
+    }
+    
+    .Hr-subtitle {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .Hr-title {
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    .Hr-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-height: 810px) {
+    .Hr-container {
+        min-height: 600px;
+    }
+}
+
+
+
